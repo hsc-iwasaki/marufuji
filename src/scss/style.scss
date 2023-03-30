@@ -1,4 +1,14 @@
-$poppins: "poppins", "noto-sans-cjk-jp", sans-serif;
+$kosugiMaru: "Kosugi Maru", sans-serif;
+$baseColor: #fffbd6;
+$subColor: #fffdee;
+$textColor: #ce1e84;
+$inpresiveColor: #ffeb3c;
+$viewport: 1920; // 基準となるビューポート
+@use "sass:math";
+
+@function pxtovw($num, $width: $viewport) {
+  @return (1vw * $num / $width * 100);
+}
 
 @mixin u1300 {
   @media (max-width: (1300px)) {
@@ -24,6 +34,7 @@ html {
 }
 
 body {
+  background-color: $baseColor;
   font-family: "noto-sans-cjk-jp", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -32,4 +43,206 @@ body {
   @include sp() {
     font-size: 14px;
   }
+}
+
+h2 {
+  color: $textColor;
+  font-weight: bold;
+  font-size: pxtovw(45);
+  line-height: pxtovw(62);
+}
+
+p {
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 45px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  nav {
+    margin-right: 60px;
+    ul {
+      display: flex;
+      column-gap: 25px;
+      li {
+        a {
+          padding: 20px 10px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.mv-wrap {
+  width: 100%;
+  .mv {
+    width: 80%;
+    height: calc(100vh - 150px);
+    margin: 0 0 pxtovw(480) auto;
+    background-image: url(../img/mv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 215px 0 0 0;
+    position: relative;
+    .main-title {
+      position: absolute;
+      margin: auto;
+      display: block;
+      height: fit-content;
+      top: -150px;
+      bottom: 0;
+      left: -10%;
+      h2 {
+        color: $textColor;
+        font-weight: bold;
+        background-color: white;
+        padding: pxtovw(15);
+        margin: 0 0 20px;
+        line-height: initial;
+      }
+    }
+  }
+}
+
+.sec-wrap {
+  background-color: $subColor;
+  border-radius: 0 80px 80px 0;
+  width: 90%;
+  margin: auto 0 0 0;
+  position: relative;
+  &__inner {
+    width: 80%;
+    margin: 0 15% 0 5%;
+    .we-support {
+      &__contents {
+        display: flex;
+        align-items: center;
+        column-gap: pxtovw(80);
+        padding: pxtovw(200) 0 0;
+        &__img {
+          > img {
+            width: pxtovw(308);
+          }
+        }
+        &__text {
+          h2 {
+            padding: 0 0 pxtovw(35);
+          }
+        }
+      }
+    }
+    .marufuji-band {
+      width: 100vw;
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+    }
+  }
+  .side-img {
+    position: absolute;
+    right: -11%;
+    top: calc(0px - pxtovw(200));
+    z-index: 0;
+    width: 31.93vw;
+    max-height: 445px;
+    max-width: 613px;
+  }
+  .bag-camera {
+    position: absolute;
+    display: inline-block;
+    height: fit-content;
+    top: -70px;
+    right: 39%;
+    .camera {
+      width: 6.73vw;
+    }
+    .bag {
+      width: 6.93vw;
+    }
+  }
+}
+
+.animation-text {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: pxtovw(514);
+  margin: pxtovw(60) 0 pxtovw(150) -7%;
+  position: relative;
+  &__content {
+    display: inline-block;
+    color: $inpresiveColor;
+    white-space: nowrap;
+    font-size: pxtovw(545);
+    animation: text_scroll 20s linear infinite;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 800;
+  }
+  &__above {
+    position: absolute;
+    right: 0;
+    width: pxtovw(557);
+    z-index: 1;
+  }
+  @keyframes text_scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.sec-bus {
+  display: flex;
+  column-gap: pxtovw(152);
+  justify-content: space-between;
+  &__text {
+    width: pxtovw(617);
+    h2 {
+      padding: 0 0 pxtovw(35);
+    }
+  }
+  &__button {
+    margin: pxtovw(50) 0 0;
+  }
+}
+
+.bus-valiable {
+  position: relative;
+  > img {
+    position: absolute;
+  }
+  ul {
+    li {
+      height: pxtovw(1000);
+      display: grid;
+      align-items: center;
+      img {
+        width: pxtovw(460);
+      }
+    }
+  }
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  width: 250px;
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 0 0 0 auto;
 }
