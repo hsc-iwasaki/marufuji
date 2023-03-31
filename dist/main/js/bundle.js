@@ -9,13 +9,13 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
+/***/ "./src/js/function.js":
+/*!****************************!*\
+  !*** ./src/js/function.js ***!
+  \****************************/
 /***/ (function() {
 
-eval("console.log(\"hello\");\n\n//# sourceURL=webpack://my-theme/./src/js/index.js?");
+eval("\n\n//# sourceURL=webpack://my-theme/./src/js/function.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("console.log(\"hello\");\n\n//# sourceURL=webpack://my-theme/./src/js/index
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/js/index.js"]();
+/******/ 	__webpack_modules__["./src/js/function.js"]();
 /******/ 	
 /******/ })()
 ;

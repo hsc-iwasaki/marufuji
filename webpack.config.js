@@ -2,9 +2,9 @@ const path = require("path");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: "./src/js/function.js",
   mode: "development",
-  output: { path: __dirname, filename: "./dist/main/js/bundle.js" },
+  output: { path: __dirname, filename: "./dist/main/js/main.js" },
   module: {
     rules: [
       {
