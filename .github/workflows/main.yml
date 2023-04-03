@@ -16,4 +16,4 @@ jobs:
                 username: ${{ secrets.STAGING_USERNAME }}   # FTPのユーザー名
                 password: ${{ secrets.STAGING_PASSWORD }}   # FTPのパスワード
                 local-dir: ./dist/main/                               # アップロードしたいファイルのパス、この場合srcディレクトリ内をアップロード対象としている
-                server-dir: /hsc01.xsrv.jp/public_html/wp-content/themes/main/      # アップロード先のリモートパス
+                server-dir: /hsc01.xsrv.jp/public_html/marufuji/wp-content/themes/main/      # アップロード先のリモートパス
