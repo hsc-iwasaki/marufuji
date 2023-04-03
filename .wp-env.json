@@ -4,7 +4,7 @@
   "plugins": [
     "https://downloads.wordpress.org/plugin/classic-editor.1.6.2.zip"
   ],
-  "themes": [],
+  "themes": ["./main"],
   "port": 8000,
   "env": {
     "tests": {
