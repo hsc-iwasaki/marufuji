@@ -2,7 +2,10 @@
 <main>
     <div class="mv-wrap">
         <div class="mv">
-            <div class="main-title pc">
+            <video src=" <?php echo get_template_directory_uri() ?>/img/DJI_0444.mp4" type="video/mp4"" playsinline autoplay muted loop>
+            </video>
+        </div>
+        <div class=" main-title pc">
                 <h2 class="fadeup">
                     <span>
                         <span class="rect"></span>
@@ -15,36 +18,35 @@
                         <span class="label">丸藤交通にお任せください</span>
                     </span>
                 </h2>
-            </div>
-            <div class="main-title sp">
-                <h2 class="fadeup">
-                    <span>
-                        <span class="rect"></span>
-                        <span class="label">貸し切りバスを</span>
-                    </span>
-                </h2>
-                <h2 class="fadeup">
-                    <span>
-                        <span class="rect"></span>
-                        <span class="label">お考えなら</span>
-                    </span>
-                </h2>
-                <h2 class="fadeup">
-                    <span>
-                        <span class="rect"></span>
-                        <span class="label">丸藤交通に</span>
-                    </span>
-                </h2>
-                <h2 class="fadeup">
-                    <span>
-                        <span class="rect"></span>
-                        <span class="label">お任せください</span>
-                    </span>
-                </h2>
-            </div>
+        </div>
+        <div class="main-title sp">
+            <h2 class="fadeup">
+                <span>
+                    <span class="rect"></span>
+                    <span class="label">貸し切りバスを</span>
+                </span>
+            </h2>
+            <h2 class="fadeup">
+                <span>
+                    <span class="rect"></span>
+                    <span class="label">お考えなら</span>
+                </span>
+            </h2>
+            <h2 class="fadeup">
+                <span>
+                    <span class="rect"></span>
+                    <span class="label">丸藤交通に</span>
+                </span>
+            </h2>
+            <h2 class="fadeup">
+                <span>
+                    <span class="rect"></span>
+                    <span class="label">お任せください</span>
+                </span>
+            </h2>
         </div>
     </div>
-    <div class="sec-wrap">
+    <div class=" sec-wrap">
         <img class='side-img fadeup' src="<?php echo get_template_directory_uri() ?>/img/side.png" alt="bus-side">
         <div class="bag-camera fadeup">
             <img class='camera' src="<?php echo get_template_directory_uri() ?>/img/image6.png" alt="camera">
@@ -88,7 +90,15 @@
                     <ul class="slider">
                         <li>
                             <div class="bus-valiable__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/img_microbus.png" alt="text">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/img_bigbus.png" alt="text">
+                            </div>
+                            <div class="bus-valiable__text">
+                                <p>大型バス</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bus-valiable__img">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/img_middlebus.png" alt="text">
                             </div>
                             <div class="bus-valiable__text">
                                 <p>中型バス</p>
@@ -96,10 +106,10 @@
                         </li>
                         <li>
                             <div class="bus-valiable__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/img_microbus.png" alt="text">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/img_littlebus.png" alt="text">
                             </div>
                             <div class="bus-valiable__text">
-                                <p>中型バス</p>
+                                <p>小型バス</p>
                             </div>
                         </li>
                         <li>
@@ -107,15 +117,7 @@
                                 <img src="<?php echo get_template_directory_uri() ?>/img/img_microbus.png" alt="text">
                             </div>
                             <div class="bus-valiable__text">
-                                <p>中型バス</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bus-valiable__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/img_microbus.png" alt="text">
-                            </div>
-                            <div class="bus-valiable__text">
-                                <p>中型バス</p>
+                                <p>マイクロバス</p>
                             </div>
                         </li>
                     </ul>

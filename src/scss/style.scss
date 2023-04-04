@@ -91,6 +91,10 @@ dt {
   font-size: max(pxtovw(16), 14px);
 }
 
+main {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -200,16 +204,66 @@ header {
 
 .mv-wrap {
   width: 100%;
+  position: relative;
+  .main-title {
+    position: absolute;
+    margin: auto;
+    display: block;
+    height: fit-content;
+    top: -150px;
+    bottom: 0;
+    left: 10%;
+    @include tb {
+      top: 50%;
+      left: 3%;
+    }
+    &.pc {
+      @include tb() {
+        display: none;
+      }
+    }
+    &.sp {
+      display: none;
+      @include tb() {
+        display: block;
+      }
+    }
+    h2 {
+      color: $textColor;
+      font-weight: bold;
+      margin: 0 0 20px;
+      background: white;
+      line-height: initial;
+      position: relative;
+      width: fit-content;
+      &.word {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        line-height: 1;
+        font-weight: 900;
+        padding: pxtovw(15);
+        .rect {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: white;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
   .mv {
     width: 80%;
     height: calc(100vh - 150px);
     margin: 0 0 pxtovw(480) auto;
-    background-image: url(../img/mv.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 215px 0 0 0;
     position: relative;
+    overflow: hidden;
     @include tb() {
       margin: 0 0 pxtovw(300) auto;
     }
@@ -219,53 +273,15 @@ header {
       height: 140vw;
       margin: 0 0 pxtovw(240) auto;
     }
-    .main-title {
+    > video {
       position: absolute;
-      margin: auto;
-      display: block;
-      height: fit-content;
-      top: -150px;
-      bottom: 0;
-      left: -10%;
-      @include tb {
-        top: 50%;
-      }
-      &.pc {
-        @include sp() {
-          display: none;
-        }
-      }
-      &.sp {
-        display: none;
-        @include tb() {
-          display: block;
-        }
-      }
-      h2 {
-        color: $textColor;
-        font-weight: bold;
-        margin: 0 0 20px;
-        background: white;
-        line-height: initial;
-        position: relative;
-        width: fit-content;
-        &.word {
-          display: block;
-          overflow: hidden;
-          position: relative;
-          line-height: 1;
-          font-weight: 900;
-          padding: pxtovw(15);
-          .rect {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background-color: white;
-            top: 0;
-            left: 0;
-          }
-        }
-      }
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 215px 0 0 0;
+      z-index: -1;
     }
   }
 }
@@ -496,7 +512,7 @@ header {
           height: pxtovw(320);
         }
         img {
-          width: pxtovw(500);
+          max-height: pxtovw(434);
           @include tb() {
             width: pxtovw(350);
           }
