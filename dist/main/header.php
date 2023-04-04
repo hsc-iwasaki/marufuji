@@ -23,7 +23,7 @@
                 <img src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="logo">
             </a>
         </div>
-        <nav>
+        <nav class="header-nav">
             <ul>
                 <li>
                     <a href="<?php echo home_url(); ?>/use">ご利用について</a>
