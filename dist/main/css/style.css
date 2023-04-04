@@ -73,10 +73,6 @@ dt {
   font-size: max(16vw / var(--viewport) * 100, 14px);
 }
 
-main {
-  overflow: hidden;
-}
-
 header {
   display: flex;
   justify-content: space-between;
