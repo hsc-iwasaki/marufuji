@@ -2,17 +2,43 @@
 <main>
     <div class="mv-wrap">
         <div class="mv">
-            <div class="main-title">
+            <div class="main-title pc">
                 <h2 class="fadeup">
                     <span>
                         <span class="rect"></span>
-                        <span class="label">貸切バスをお考えなら</span>
+                        <span class="label">貸し切りバスをお考えなら</span>
                     </span>
                 </h2>
                 <h2 class="fadeup">
                     <span>
                         <span class="rect"></span>
                         <span class="label">丸藤交通にお任せください</span>
+                    </span>
+                </h2>
+            </div>
+            <div class="main-title sp">
+                <h2 class="fadeup">
+                    <span>
+                        <span class="rect"></span>
+                        <span class="label">貸し切りバスを</span>
+                    </span>
+                </h2>
+                <h2 class="fadeup">
+                    <span>
+                        <span class="rect"></span>
+                        <span class="label">お考えなら</span>
+                    </span>
+                </h2>
+                <h2 class="fadeup">
+                    <span>
+                        <span class="rect"></span>
+                        <span class="label">丸藤交通に</span>
+                    </span>
+                </h2>
+                <h2 class="fadeup">
+                    <span>
+                        <span class="rect"></span>
+                        <span class="label">お任せください</span>
                     </span>
                 </h2>
             </div>
