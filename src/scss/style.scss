@@ -80,6 +80,7 @@ h3 {
   font-family: "Kosugi Maru", sans-serif;
   font-weight: bold;
   font-size: max(pxtovw(22), 16px);
+  white-space: nowrap;
 }
 
 p,
@@ -112,13 +113,12 @@ header {
       position: absolute;
       background: white;
       top: 0;
-      left: 100%;
-      width: 100%;
+      transform: translateX(100%);
+      width: 105%;
       height: 100vh;
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
-      display: none;
     }
     ul {
       display: flex;
@@ -627,6 +627,10 @@ header {
       @include tb() {
         justify-content: center;
       }
+      @include sp() {
+        height: auto;
+        margin: pxtovw(50) 0 pxtovw(10);
+      }
     }
     &__text {
       height: max(pxtovw(160), 150px);
@@ -750,6 +754,12 @@ header {
   iframe {
     width: pxtovw(556);
     height: pxtovw(318);
+  }
+  .the-map {
+    @include sp() {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 

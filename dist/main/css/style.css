@@ -62,6 +62,7 @@ h3 {
   font-family: "Kosugi Maru", sans-serif;
   font-weight: bold;
   font-size: max(22vw / var(--viewport) * 100, 16px);
+  white-space: nowrap;
 }
 
 p,
@@ -93,13 +94,12 @@ header nav {
     position: absolute;
     background: white;
     top: 0;
-    left: 100%;
-    width: 100%;
+    transform: translateX(100%);
+    width: 105%;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    display: none;
   }
 }
 header nav ul {
@@ -662,6 +662,12 @@ header nav ul li a {
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  .customer-info__content__title {
+    height: auto;
+    margin: calc(50vw / var(--viewport) * 100) 0 calc(10vw / var(--viewport) * 100);
+  }
+}
 .customer-info__content__text {
   height: max(160vw / var(--viewport) * 100, 150px);
 }
@@ -787,6 +793,12 @@ header nav ul li a {
 .sec-map iframe {
   width: calc(556vw / var(--viewport) * 100);
   height: calc(318vw / var(--viewport) * 100);
+}
+@media (max-width: 768px) {
+  .sec-map .the-map {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 footer p {

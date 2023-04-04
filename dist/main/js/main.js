@@ -38,7 +38,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _h2MovingAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./h2MovingAction */ \"./src/js/h2MovingAction.js\");\n/* harmony import */ var _fadeUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fadeUp */ \"./src/js/fadeUp.js\");\n/* harmony import */ var _fromSideGimmick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fromSideGimmick */ \"./src/js/fromSideGimmick.js\");\n/* harmony import */ var _infoBg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./infoBg */ \"./src/js/infoBg.js\");\n/* harmony import */ var _mySlick__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mySlick */ \"./src/js/mySlick.js\");\n\n\n\n\n\n(0,_mySlick__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n(0,_fadeUp__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_h2MovingAction__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_fromSideGimmick__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_infoBg__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n//# sourceURL=webpack://my-theme/./src/js/function.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _h2MovingAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./h2MovingAction */ \"./src/js/h2MovingAction.js\");\n/* harmony import */ var _fadeUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fadeUp */ \"./src/js/fadeUp.js\");\n/* harmony import */ var _fromSideGimmick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fromSideGimmick */ \"./src/js/fromSideGimmick.js\");\n/* harmony import */ var _infoBg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./infoBg */ \"./src/js/infoBg.js\");\n/* harmony import */ var _mySlick__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mySlick */ \"./src/js/mySlick.js\");\n/* harmony import */ var _opbtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./opbtn */ \"./src/js/opbtn.js\");\n\n\n\n\n\n\n(0,_opbtn__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n(0,_mySlick__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n(0,_fadeUp__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_h2MovingAction__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_fromSideGimmick__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_infoBg__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n//# sourceURL=webpack://my-theme/./src/js/function.js?");
 
 /***/ }),
 
@@ -72,6 +72,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);\n\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".slider\").slick({\n    arrows: false,\n    // 前・次のボタンを表示する\n    dots: false,\n    // ドットナビゲーションを表示する\n    speed: 1000,\n    // スライドさせるスピード（ミリ秒）\n    slidesToShow: 1,\n    // 表示させるスライド数\n    centerMode: true,\n    // slidesToShowが奇数のとき、現在のスライドを中央に表示する\n    variableWidth: true,\n    // スライド幅の自動計算を無効化\n    autoplay: true\n  });\n}\n\n//# sourceURL=webpack://my-theme/./src/js/mySlick.js?");
+
+/***/ }),
+
+/***/ "./src/js/opbtn.js":
+/*!*************************!*\
+  !*** ./src/js/opbtn.js ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n  var opbtn = document.querySelectorAll(\".opbtn\");\n  console.log(opbtn);\n  opbtn.addEventListener(\"click\", function () {\n    console.log(\"hoge\");\n  }, false);\n}\n\n//# sourceURL=webpack://my-theme/./src/js/opbtn.js?");
 
 /***/ }),
 
