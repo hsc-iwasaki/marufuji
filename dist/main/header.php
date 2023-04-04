@@ -24,7 +24,7 @@
             </a>
         </div>
         <nav>
-            <ul>
+            <ul class="header-nav">
                 <li>
                     <a href="<?php echo home_url(); ?>/use">ご利用について</a>
                 </li>
