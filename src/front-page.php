@@ -2,7 +2,7 @@
 <main>
     <div class="mv-wrap">
         <div class="mv">
-            <video src=" <?php echo get_template_directory_uri() ?>/img/DJI_0444.mp4" type="video/mp4"" playsinline autoplay muted loop>
+            <video src="<?php echo get_template_directory_uri() ?>/img/DJI_0444.mp4" type="video/mp4"" playsinline autoplay muted loop>
             </video>
         </div>
         <div class=" main-title pc">

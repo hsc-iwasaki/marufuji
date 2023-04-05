@@ -833,3 +833,190 @@ footer p {
     margin: auto;
   }
 }
+
+.sv {
+  width: calc(1547vw / var(--viewport) * 100);
+  margin: 0 auto calc(60vw / var(--viewport) * 100);
+  padding: calc(40vw / var(--viewport) * 100) calc(130vw / var(--viewport) * 100);
+  background-color: #fffdee;
+  border-radius: calc(60vw / var(--viewport) * 100);
+}
+@media (max-width: 1000px) {
+  .sv {
+    width: 80%;
+    padding: calc(40vw / var(--viewport) * 100) calc(50vw / var(--viewport) * 100);
+  }
+}
+@media (max-width: 768px) {
+  .sv {
+    width: 95%;
+  }
+}
+.sv__icon {
+  display: flex;
+  justify-content: center;
+}
+.sv__icon img {
+  width: max(85vw / var(--viewport) * 100, 60px);
+}
+.sv__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: calc(20vw / var(--viewport) * 100) 0 calc(30vw / var(--viewport) * 100);
+}
+.sv__title p {
+  font-size: max(21vw / var(--viewport) * 100, 18px);
+}
+.sv__text {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 calc(80vw / var(--viewport) * 100);
+}
+.sv__main {
+  width: calc(1547vw / var(--viewport) * 100);
+  margin: auto;
+  background-color: #fffdee;
+  border-radius: calc(60vw / var(--viewport) * 100);
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .sv__main {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .sv__main {
+    width: 95%;
+  }
+}
+
+.page-company {
+  width: calc(1057vw / var(--viewport) * 100);
+  padding: calc(70vw / var(--viewport) * 100) 0;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .page-company {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .page-company {
+    width: 95%;
+  }
+}
+.page-company__line img {
+  width: 100%;
+}
+.page-company__title {
+  display: flex;
+  justify-content: center;
+}
+.page-company__contents {
+  padding: calc(60vw / var(--viewport) * 100) 0;
+}
+@media (max-width: 768px) {
+  .page-company__contents {
+    padding: calc(60vw / var(--viewport) * 100) 0 calc(150vw / var(--viewport) * 100);
+  }
+}
+.page-company__dl > dl {
+  width: 60vw;
+  margin: calc(25vw / var(--viewport) * 100) auto;
+}
+@media (max-width: 768px) {
+  .page-company__dl > dl {
+    width: 95%;
+  }
+}
+.page-company__dl > dl > dl {
+  display: flex;
+  column-gap: calc(20vw / var(--viewport) * 100);
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .page-company__dl > dl > dl {
+    width: 95%;
+  }
+}
+.page-company__dl > dl > dl > dt {
+  width: calc(150vw / var(--viewport) * 100);
+}
+.page-company__leaf {
+  position: absolute;
+  right: 0;
+  bottom: calc(105vw / var(--viewport) * 100);
+}
+.page-company__leaf img {
+  width: calc(87vw / var(--viewport) * 100);
+}
+
+.use-contents {
+  width: calc(1547vw / var(--viewport) * 100);
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  .use-contents {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .use-contents {
+    width: 95%;
+  }
+}
+.use-contents .use-content {
+  border-radius: calc(60vw / var(--viewport) * 100);
+  background-color: #fffdee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: calc(40vw / var(--viewport) * 100);
+  margin: calc(40vw / var(--viewport) * 100) auto;
+  padding: calc(40vw / var(--viewport) * 100) 0;
+}
+@media (max-width: 768px) {
+  .use-contents .use-content {
+    display: grid;
+  }
+}
+.use-contents .use-content__img {
+  width: calc(175vw / var(--viewport) * 100);
+}
+@media (max-width: 768px) {
+  .use-contents .use-content__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 25px;
+  }
+}
+.use-contents .use-content__img img {
+  width: calc(175vw / var(--viewport) * 100);
+}
+.use-contents .use-content__text {
+  width: calc(510vw / var(--viewport) * 100);
+}
+@media (max-width: 768px) {
+  .use-contents .use-content__text {
+    width: 80%;
+    margin: auto;
+  }
+}
+.use-contents .use-content__text h3 {
+  padding: 0 0 calc(15vw / var(--viewport) * 100);
+}
+.use-contents .use-content__btn {
+  margin: calc(20vw / var(--viewport) * 100) 0;
+}
+.use-contents .use-content__btn .btn {
+  margin: auto 0 0 0;
+}
+@media (max-width: 768px) {
+  .use-contents .use-content__btn .btn {
+    margin: auto;
+  }
+}

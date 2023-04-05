@@ -795,3 +795,164 @@ footer {
     margin: auto;
   }
 }
+
+.sv {
+  width: pxtovw(1547);
+  margin: 0 auto pxtovw(60);
+  padding: pxtovw(40) pxtovw(130);
+  background-color: $subColor;
+  border-radius: pxtovw(60);
+  @include tb() {
+    width: 80%;
+    padding: pxtovw(40) pxtovw(50);
+  }
+  @include sp() {
+    width: 95%;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    img {
+      width: max(pxtovw(85), 60px);
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: pxtovw(20) 0 pxtovw(30);
+    p {
+      font-size: max(pxtovw(21), 18px);
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 pxtovw(80);
+  }
+  &__main {
+    width: pxtovw(1547);
+    margin: auto;
+    background-color: $subColor;
+    border-radius: pxtovw(60);
+    display: flex;
+    justify-content: center;
+    @include tb() {
+      width: 80%;
+    }
+    @include sp() {
+      width: 95%;
+    }
+  }
+}
+
+.page-company {
+  width: pxtovw(1057);
+  padding: pxtovw(70) 0;
+  position: relative;
+  @include tb() {
+    width: 80%;
+  }
+  @include sp() {
+    width: 95%;
+  }
+  &__line {
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+  &__contents {
+    padding: pxtovw(60) 0;
+    @include sp() {
+      padding: pxtovw(60) 0 pxtovw(150);
+    }
+  }
+  &__dl {
+    > dl {
+      width: 60vw;
+      margin: pxtovw(25) auto;
+      @include sp() {
+        width: 95%;
+      }
+      > dl {
+        display: flex;
+        column-gap: calc(20vw / var(--viewport) * 100);
+        width: 60%;
+        margin: auto;
+        @include sp() {
+          width: 95%;
+        }
+        > dt {
+          width: pxtovw(150);
+        }
+      }
+    }
+  }
+  &__leaf {
+    position: absolute;
+    right: 0;
+    bottom: pxtovw(105);
+    img {
+      width: pxtovw(87);
+    }
+  }
+}
+
+.use-contents {
+  width: pxtovw(1547);
+  margin: auto;
+  @include tb() {
+    width: 80%;
+  }
+  @include sp() {
+    width: 95%;
+  }
+  .use-content {
+    border-radius: pxtovw(60);
+    background-color: $subColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: pxtovw(40);
+    margin: pxtovw(40) auto;
+    padding: pxtovw(40) 0;
+    @include sp() {
+      display: grid;
+    }
+    &__img {
+      width: pxtovw(175);
+      @include sp() {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 25px;
+      }
+      img {
+        width: pxtovw(175);
+      }
+    }
+    &__text {
+      width: pxtovw(510);
+      @include sp() {
+        width: 80%;
+        margin: auto;
+      }
+      h3 {
+        padding: 0 0 pxtovw(15);
+      }
+    }
+    &__btn {
+      margin: pxtovw(20) 0;
+      .btn {
+        margin: auto 0 0 0;
+        @include sp() {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
