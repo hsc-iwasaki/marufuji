@@ -10,7 +10,7 @@
     </div>
     <div>
         <div class="use-contents">
-            <div class="use-content">
+            <div class="use-content fadeup">
                 <div class="use-content__img">
                     <img src="<?php echo get_template_directory_uri() ?>/img/use/use1.png" alt="use1">
                 </div>
@@ -21,7 +21,7 @@
                     </p>
                 </div>
             </div>
-            <div class="use-content">
+            <div class="use-content fadeup">
                 <div class="use-content__img">
                     <img src="<?php echo get_template_directory_uri() ?>/img/use/use2.png" alt="use1">
                 </div>
@@ -32,7 +32,7 @@
                     </p>
                 </div>
             </div>
-            <div class="use-content">
+            <div class="use-content fadeup">
                 <div class="use-content__img">
                     <img src="<?php echo get_template_directory_uri() ?>/img/use/use3.png" alt="use1">
                 </div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="use-content">
+            <div class="use-content fadeup">
                 <div class="use-content__img">
                     <img src="<?php echo get_template_directory_uri() ?>/img/use/use4.png" alt="use1">
                 </div>
@@ -57,7 +57,7 @@
                     </p>
                 </div>
             </div>
-            <div class="use-content">
+            <div class="use-content fadeup">
                 <div class="use-content__img">
                     <img src="<?php echo get_template_directory_uri() ?>/img/use/use5.png" alt="use1">
                 </div>
