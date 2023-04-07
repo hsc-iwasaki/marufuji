@@ -29,7 +29,7 @@ export default function () {
             ease: "power4.out",
           })
           .to(".header-nav", {
-            x: "-5%",
+            x: 0,
             duration: 0.5,
             ease: "power4.out",
           });

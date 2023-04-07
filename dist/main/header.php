@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- slickのCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/style.css">
+    <link id="sylesheet" rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Sarabun:wght@700;800&display=swap" rel="stylesheet">
-
     <title>丸藤交通</title>
 </head>
+<div id="loading-screen">
+    <span id="loading-progress">0%</span>
+</div>
 
 <body>
     <header>

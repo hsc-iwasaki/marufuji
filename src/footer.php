@@ -55,6 +55,7 @@
     </p>
 </footer>
 </body>
-<script src="<?php echo get_template_directory_uri() ?>/js/bundle.js"></script>
+<!-- <script src="<?php echo get_template_directory_uri() ?>/js/load.bundle.js"></script> -->
+<script src="<?php echo get_template_directory_uri() ?>/js/main.bundle.js"></script>
 
 </html>
